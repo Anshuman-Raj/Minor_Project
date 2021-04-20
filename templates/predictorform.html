@@ -1,7 +1,28 @@
-<html>
-   <body>
-      <form action = "http://localhost:9999/results" method = "POST">
-         <p>Bidder_ID <input type = "text" name = "Bidder_ID" /></p>
-      </form>
-   </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Predictor</title>
+   <link rel="icon" href="favicon/favicon-16x16.png">
+   <link rel="stylesheet" href="css/predictorform.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+      <div class="text">
+         <h1 >
+            Welcome to the Fraud Detector Tool
+         </h1>
+         <h3>
+            Please provide the bidder ID to check if the bidder is suspicious or not.
+         </h3>
+         <form action="http://localhost:9999/results" method="POST">
+            <input class="submit-box" type="text" name="Bidder_ID" placeholder="Bidder ID " >
+         </form>
+      </div>
+   </div>
+</body>
 </html>
