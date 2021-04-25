@@ -11,8 +11,8 @@
     
 </head>
 
-<body style="margin: 0%; padding: 50px; background: rgb(91,200,191); background: linear-gradient(90deg, rgba(91,200,191,1) 28%, rgba(134,134,201,1) 68%, rgba(0,212,255,1) 100%);">
-    <div class="container" style="padding: 60px 30px; background-color: transparent;">
+<body style="margin: 0%; padding: 0px 20px; background: rgb(91,200,191); background: linear-gradient(90deg, rgba(91,200,191,1) 28%, rgba(134,134,201,1) 68%, rgba(0,212,255,1) 100%);">
+    <div class="container" style="padding: 0px 30px; background-color: transparent;">
         <div class="text" style="text-align: center;">
             <h1 style="padding-bottom: 0px; font-size: 55px; font-family: 'Press Start 2P', cursive; font-family: 'Zen Dots', cursive;">
                 Fraud Result Found
@@ -20,7 +20,21 @@
             <h3 style="text-transform: capitalize; color: rgb(35, 18, 134); font-size: 50px;">Bidder_ID:</h3>
             <div style="font-size: 30px;">{{ Bidder_ID }}</div>
             <h3 style=" text-transform: capitalize; color: rgb(35, 18, 134); font-size: 50px;">Status:</h3>
-            <div style=" transition: 1s; font-size: 50px; ">This is the status of the bidder: <strong>{{ predicted_status }}</strong>.</div>
+            <div style=" transition: 1s; font-size: 50px; ">The bidder is: <strong>{{ predicted_status }}</strong>.</div>
+            <h2><strong>Primary Details of Bidder:</strong></h2>
+            <div style="margin-left: 45%">
+            	
+            	<font align=left>
+            	
+            	<ul style=" transition: 1s; font-size: 20px; ">
+            	<li/>Bidder Tendency: {{ Bidder_Tendency }}
+            	<li/>Bidding Ratio: {{ Bidding_Ratio }}
+            	<li/>Successive Outbidding: {{ Successive_Outbidding }}
+            	<li/>Last bidding: {{ Last_Bidding }}
+            	<li/>Winning Ratio: {{ Winning_Ratio }}
+            	</ul>
+            	</font>
+            </div>
         </div>
     </div>
 </body>

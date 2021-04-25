@@ -33,6 +33,10 @@ def results():
         dtest=xgb.DMatrix(x)
         num_status=model.predict(dtest)
         status=conv_dict[num_status[0]]
-        return render_template('resultsform.html', Bidder_ID=Bidder_ID,   predicted_status=status)
+#returning all the required values to result
+        return render_template('resultsform.html', Bidder_ID=Bidder_ID,   predicted_status=status, Bidder_Tendency=x[0][0], Bidding_Ratio=x[0][1],
+        Successive_Outbidding=x[0][2],
+        Last_Bidding=x[0][3],
+        Winning_Ratio=x[0][7])
 
 app.run("localhost", "9999", debug=True)
