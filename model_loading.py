@@ -2,7 +2,7 @@
 """
 Created on Thu Apr  8 23:15:33 2021
 
-@author: Anshuman
+@author: Anshuman Raj
 """
 import numpy as np
 import pickle
@@ -12,6 +12,7 @@ from flask import Flask, render_template, request
 conv_dict={0:"Normal Bidder",1: "Suspicious Bidder"}
 #making the flask app
 app = Flask('fraud_dtection')
+
 
 @app.route('/')
 def show_predict_bidder_form():
