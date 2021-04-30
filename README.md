@@ -1,2 +1,2 @@
-# Online-Auction-System-with-Fraud-Detection
-Project
+# Minor_Project
+A project on online auction system with fraud detection
